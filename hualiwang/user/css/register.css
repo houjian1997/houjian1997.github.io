@@ -1,0 +1,138 @@
+
+.bg_content{
+    height:476px;
+    background:pink;
+    background:url(../img/bg.jpg.png) no-repeat center center;
+    background-size:cover;
+    position:relative;
+}
+
+.bg_content .content{
+    width:440px;
+    height:440px;
+    position:absolute;
+    top:18px;
+    right:64px;
+    padding:32px 60px 0px 60px;
+    box-sizing:border-box;
+    background:#fff;
+    overflow:hidden;
+}
+
+.content .method{
+    width:320px;
+    height:40px;
+    text-align:center;
+    line-height:40px;
+    font-size:20px;
+    font-weight:600;
+    color:#232628;
+}
+
+.usertelDiv,
+.msgcodeDiv,
+.userpwdDiv{
+    width:320px;
+    height:40px;
+    margin-top:12px;
+    border:1px solid #b4babf;
+}
+
+.usertelDiv .usertel,
+.userpwdDiv .userpwd{
+    width:268px;
+    height:40px;
+    outline:none;
+    border:0; 
+}
+
+.msgcodeDiv .msgcode{
+    width:170px;
+    height:40px;
+    outline:none;
+    border:0; 
+} 
+
+#code_btn{
+    display:block;
+    float:right;
+    width:98px;
+    height:40px;
+    border:0;
+    outline:none;
+    color:#232628;
+    background:#e9ecf0;
+    cursor:pointer;
+    line-height:40px;
+    text-align:center;
+}
+
+.content .tip{
+    width:320px;
+    height:30px;
+    font-size:12px;
+    line-height:30px;
+    margin-bottom:10px;
+}
+
+#register_btn{
+    width:320px;
+    height:42px;
+    font-size:18px;
+    color:#fff;
+    text-align:center;
+    line-height:42px;
+    background:#ff734c;
+    border-radius:21px;
+    border:0;
+    outline:none;
+    cursor:pointer;
+}
+
+.content .itemDiv{
+    width:440px;
+    height:42px;
+    background:#f7f9fa;
+    position:absolute;
+    left:0;
+    bottom:0;
+    padding:12px 80px;
+    box-sizing:border-box;
+    font-size:13px;
+    font-weight:600;
+    color:#232628;
+}
+
+.content img:first-of-type{
+    margin-left:13px;
+    vertical-align: middle;
+}
+
+.content img:nth-of-type(2),
+.content img:nth-of-type(3){
+    margin-left:10px;
+    vertical-align: middle;
+}
+
+#email_span{
+    display:block;
+    float:left;
+    margin-right:90px;
+    cursor:pointer;
+}
+
+#gologin_span{
+    display:block;
+    float:left;
+    cursor:pointer;
+}
+
+
+
+
+
+
+
+
+
+

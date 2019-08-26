@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="../../css/header.css">
+    <link rel="stylesheet" type="text/css" href="../css/myshoppingcar.css">
+    <link rel="stylesheet" type="text/css" href="../../css/footer.css">
+</head>
+
+<body>
+    <div class="boss">
+        <div class="bg_header">
+            <div class="header">
+                <div class="left">
+                    <ul class="leftUl">
+                        <li>
+                            <img src="../img/icon01.png" alt="">
+                            <span>收藏鲜花网(hua.com)</span>
+                        </li>
+                        <li>
+                            <img src="../img/icon02.png" alt="">
+                            <span>关注微信</span>
+                        </li>
+                        <li>
+                            <img src="../img/icon03.png" alt="">
+                            <span>花礼网app</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="right">
+                    <ul class="rightUl">
+                        <li>
+                            <a href="../../user/html/login.html" id="login_status">你好，请登录</a>
+                            <a href="../../user/html/register.html">注册</a>
+                        </li>
+                        <li>
+                            <a href="#">订单查询</a>
+                        </li>
+                        <li>
+                            <a href="#">我的花礼</a>
+                        </li>
+                        <li>
+                            <a href="#">客户服务</a>
+                            <img src="../img/icon07.png" alt="">
+                        </li>
+                        <li>
+                            <a href="myshoppingcar.html">
+                                <img src="../img/icon06.png" alt="">
+                                <span>购物车</span>
+                                <span id="shoppingcar_span">(0)</span>
+                            </a>
+                            <img src="../img/icon07.png" alt="">
+                        </li>
+                        <li>
+                            中国鲜花礼品网：中国鲜花网领先品牌
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- logol -->
+        <div class="bg_top">
+            <div class="topDiv">
+                <div class="logol">
+                    <img src="../img/logol.png" alt="">
+                </div>
+                <div class="center">
+                    <div class="search">
+                        <input type="text" class="keywords" placeholder="商品关键词">
+                        <button id="search_btn">搜索</button>
+                    </div>
+                </div>
+                <div class="serviceDiv">
+                    <p>
+                        <img src="../img/icon04.png" alt="">
+                        <span>400-889-8188</span>
+                        <img src="../img/icon05.png" alt="">
+                        <span>在线客服</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="block">
+            <div class="tip_msg">您还还没有商品,请挑选一件商品~</div>
+            <div class="tip_btn">
+                <button id="cancel">取消</button>
+                <button id="confirm">确定</button>
+            </div>
+        </div>
+        <!-- 购物车 -->
+        <div class="bg_shopping">
+            <div class="shopping">
+                <ul class="thead">
+                    <li>商品名称</li>
+                    <li>订购单价</li>
+                    <li>购买数量</li>
+                    <li>价格小计</li>
+                    <li>操作</li>
+                </ul>
+                <div class="tbody">
+                    <!-- <ul class="tbodyUl">
+                        <li>
+                            <input type="checkbox" class="check_one">
+                        </li>
+                        <li>
+                            <dl>
+                                <dt>
+                                    <img src="../img/ysh/djjy.jpg" alt="">
+                                </dt>
+                                <dd>
+                                    <p class="goodsname">
+                                        [礼品]迷你兔·红一苔藓小兔1只、进口红色永生玫瑰1朵、樱花粉小玫瑰1朵
+                                    </p>
+                                    <p class="tip">顺丰快递深圳发货</p>
+                                </dd>
+                            </dl>
+                        </li>
+                        <li class="price_one">
+                            ￥298
+                        </li>
+                        <li class="count">
+                            <span class="reduce_span">-</span>
+                            <span class="count_span">5</span>
+                            <span class="add_span">+</span>
+                        </li>
+                        <li class="price_all">￥298</li>
+                        <li class="operate">
+                            <p class="delete_one">删除</p>
+                            <p class="collect">移到我的收藏</p>
+                        </li>
+                    </ul>-->
+                </div>
+            </div>
+            <div class="bg_tfoot">
+                <div class="tfoot">
+                    <p id="back">
+                        <a href="ysh.html">继续挑选</a>
+                    </p>
+                    <p id="totalNum">
+                        <span>已购商品：</span>
+                        <span id="totalNum_span"></span>
+                        <span>件</span>
+                    </p>
+                    <p id="price">
+                        <span>应付金额：￥</span>
+                        <span id="total"></span>
+                    </p>
+                    <p id="pay">去结算</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg_footer">
+            <div class="nav">
+                <ul class="navUl">
+                    <li>
+                        <a href="../../goods/html/home.html">首页</a>
+                    </li>
+                    <li>
+                        <a href="#">关于我们</a>
+                    </li>
+                    <li>
+                        <a href="#">媒体报道</a>
+                    </li>
+                    <li>
+                        <a href="#">联系方式</a>
+                    </li>
+                    <li>
+                        <a href="#">企业团购</a>
+                    </li>
+                    <li>
+                        <a href="#">花点入驻</a>
+                    </li>
+                    <li>
+                        <a href="#">友情链接</a>
+                    </li>
+                    <li>
+                        <a href="#">在线补款</a>
+                    </li>
+                    <li class="lastLi">
+                        <a href="#">为什么选择中国鲜花礼品网</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="bottom_icon">
+                <img src="../img/common/bico01.png" alt="">
+                <img src="../img/common/bico02.gif" alt="">
+                <img src="../img/common/bico03.gif" alt="">
+                <img src="../img/common/bico04.png" alt="">
+                <img src="../img/common/bico05.gif" alt="">
+                <img src="../img/common/bico06.jpg" alt="">
+                <img src="../img/common/bico07.jpg" alt="">
+                <img src="../img/common/bico08.jpg" alt="">
+                <img src="../img/common/bico09.jpg" alt="">
+            </div>
+            <div class="bottom_msg">
+                <p>中国花卉协会会员 中国电子商务协会会员 ICP经营许可证:粤B2-20050744 粤ICP备09171662号 粤公网安备44030502000373号 Copyright ©
+                    2005-2019<br />
+                    www.hua.com 深圳市百易信息技术有限公司 </p>
+            </div>
+        </div>
+    </div>
+
+</body>
+<script src="../../js/cookie.js"></script>
+<script src="../../js/jquery-1.10.1.min.js"></script>
+<script>
+    var userid = getCookie("userid");
+    var username = getCookie("username");
+    if (userid && username) {
+        $("#login_status").html("你好，" + username);
+        $.ajax({
+            type: "get",
+            url: "../../php/myshoppingcar.php",
+            data: {
+                userid: userid,
+                username: username
+            },
+            dataType: "json",
+            success: function (list) {
+                var str = "";
+                list.forEach(function (item) {
+                    var {
+                        goodsid,
+                        goodsname,
+                        goodstitle,
+                        goodsprice,
+                        buynum,
+                        goodsimg,
+                        ps
+                    } = item;
+                    str += `<ul class="tbodyUl">
+                        <li>
+                            <input type="checkbox" class="check_one" checked>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt>
+                                    <img src="../img/ysh/${goodsimg}.jpg" alt="" data-goodsid=${goodsid} data-back="backDetail">
+                                </dt>
+                                <dd>
+                                    <p class="goodsname" data-goodsid=${goodsid} data-back="backDetail">
+                                        ${goodsname} ${goodstitle}
+                                    </p>
+                                    <p class="tip" data-goodsid=${goodsid} data-back="backDetail">${ps}</p>
+                                </dd>
+                            </dl>
+                        </li>
+                        <li class="price_one">
+                            ￥${goodsprice}
+                        </li>
+                        <li class="count">
+                            <span class="reduce_span" data-count="-1" data-goodsid="${goodsid}" data-buynum="${buynum}" data-goodsprice="goodsprice">${buynum * 1 > 1 ? '-' : ''}</span>
+                            <span class="count_span">${buynum}</span>
+                            <span class="add_span" data-count="1" data-goodsid="${goodsid}" data-buynum="${buynum}" data-goodsprice="goodsprice">+</span>
+                        </li>
+                        <li class="price_all">${(goodsprice * buynum)}</li>
+                        <li class="operate">
+                            <p class="delete_one" data-goodsid="${goodsid}">删除</p>
+                            <p class="collect">移到我的收藏</p>
+                        </li>
+                    </ul>`
+                })
+                $(".tbody").html(str);
+                getTotal();
+                setGoodsnum();
+            }
+        })
+
+        $(document).click(function (e) {
+            var target = $(e.target);
+            var goodsid = target.attr("data-goodsid");
+            if (target.attr("class") == "reduce_span" || target.attr("class") == "add_span") {
+                var buynum = target.attr("data-buynum");
+                buynum <= 1 && (target.attr("class") == "reduce_span") ? count = 0 : count = target.attr("data-count");
+                $.ajax({
+                    type: "get",
+                    url: "../../php/myshoppingcar1.php",
+                    data: {
+                        userid: userid,
+                        username: username,
+                        count: count,
+                        goodsid: goodsid
+                    },
+                    dataType: "json",
+                    success: function (list) {
+                        var str = "";
+                        list.forEach(function (item) {
+                            var {
+                                goodsid,
+                                goodsname,
+                                goodstitle,
+                                goodsprice,
+                                buynum,
+                                goodsimg,
+                                ps
+                            } = item;
+                            str += `<ul class="tbodyUl">
+                        <li>
+                            <input type="checkbox" class="check_one" checked>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt>
+                                    <img src="../img/ysh/${goodsimg}.jpg" alt="" data-goodsid=${goodsid} data-back="backDetail">
+                                </dt>
+                                <dd>
+                                    <p class="goodsname" data-goodsid=${goodsid} data-back="backDetail">
+                                        ${goodsname} ${goodstitle}
+                                    </p>
+                                    <p class="tip" data-goodsid=${goodsid} data-back="backDetail">${ps}</p>
+                                </dd>
+                            </dl>
+                        </li>
+                        <li class="price_one">
+                            ￥${goodsprice}
+                        </li>
+                        <li class="count">
+                            <span class="reduce_span" data-count="-1" data-goodsid="${goodsid}" data-buynum="${buynum}" data-goodsprice="goodsprice">${buynum * 1 > 1 ? '-' : ''}</span>
+                            <span class="count_span">${buynum}</span>
+                            <span class="add_span" data-count="1" data-goodsid="${goodsid}" data-buynum="${buynum}" data-goodsprice="goodsprice">+</span>
+                        </li>
+                        <li class="price_all">${(goodsprice * buynum)}</li>
+                        <li class="operate">
+                            <p class="delete_one" data-goodsid="${goodsid}">删除</p>
+                            <p class="collect">移到我的收藏</p>
+                        </li>
+                      </ul>`
+                        })
+                        $(".tbody").html(str);
+                        getTotal();
+                        setGoodsnum();
+                    }
+                })
+            }
+
+            if (target.attr("class") == "delete_one") {
+                var goodsid = target.attr("data-goodsid");
+                $.ajax({
+                    type: "get",
+                    url: "../../php/delete.php",
+                    data: {
+                        userid: userid,
+                        goodsid: goodsid,
+                        username: username
+                    },
+                    dataType: "json",
+                    success: function (obj) {
+                        if (obj["code"] > 0) {
+                            target.parent().parent().remove();
+                            getTotal();
+                            setGoodsnum();
+                        } else {
+                            alert(obj["msg"]);
+                        }
+                    }
+                })
+            }
+
+            if (target.attr("class") == "check_one") {
+                getTotal();
+                setGoodsnum();
+            }
+
+            if (target.attr("id") == "pay") {
+                getTotal();
+                var num = $("#totalNum_span").html() * 1;
+                if (num == 0) {
+                    $(".block").fadeIn(1000).css({
+                        "top": "50%",
+                        "margin-top": "-75px"
+                    })
+                } else if (num > 0) {
+                    location.href = "ordercenter.html";
+                }
+            }
+
+            if (target.attr("id") == "confirm") {
+                target.parent().parent().fadeOut(1000, function () {
+                    location.href = "ysh.html";
+                }).css({
+                    "top": "50%",
+                    "margin-top": "-75px"
+                })
+            }
+
+            if (target.attr("id") == "cancel") {
+                target.parent().parent().fadeOut(1000).css({
+                    "top": "50%",
+                    "margin-top": "-75px"
+                })
+            }
+
+            if (target.attr("data-back") == "backDetail") {
+                var goodsid = target.attr("data-goodsid");
+                location.href = `ysh_detail.html?goodsid=${goodsid}`
+            }
+        })
+
+        function getTotal() {
+            var num = 0;
+            var price = 0;
+            $(".check_one:checked").each(function () {
+                var ul = $(this).parent().parent();
+                var count_span = ul.find(".count_span");
+                var price_all = ul.find(".price_all");
+                num += count_span.html() * 1;
+                price += price_all.html() * 1;
+            });
+            $("#total").html(price);
+            $("#totalNum_span").html(num);
+        }
+
+        function setGoodsnum() {
+            $("#shoppingcar_span").html("(" + $("#totalNum_span").html() + ")");
+        }
+    } else {
+        $("#login_status").html("你好，请登录");
+        setCookie("backUrl", location.href, 7);
+        location.href = '../../user/html/login.html';
+    }
+</script>
+
+</html>

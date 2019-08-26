@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="../../css/header.css">
+    <link rel="stylesheet" type="text/css" href="../css/ordercenter.css">
+    <link rel="stylesheet" type="text/css" href="../../css/footer.css">
+</head>
+
+<body>
+    <div class="boss">
+        <div class="bg_header">
+            <div class="header">
+                <div class="left">
+                    <ul class="leftUl">
+                        <li>
+                            <img src="../img/icon01.png" alt="">
+                            <span>收藏鲜花网(hua.com)</span>
+                        </li>
+                        <li>
+                            <img src="../img/icon02.png" alt="">
+                            <span>关注微信</span>
+                        </li>
+                        <li>
+                            <img src="../img/icon03.png" alt="">
+                            <span>花礼网app</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="right">
+                    <ul class="rightUl">
+                        <li>
+                            <a href="../../user/html/login.html" id="login_status">你好，请登录</a>
+                            <a href="../../user/html/register.html">注册</a>
+                        </li>
+                        <li>
+                            <a href="#">订单查询</a>
+                        </li>
+                        <li>
+                            <a href="#">我的花礼</a>
+                        </li>
+                        <li>
+                            <a href="#">客户服务</a>
+                            <img src="../img/icon07.png" alt="">
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="../img/icon06.png" alt="">
+                                <span>购物车</span>
+                                <span>(0)</span>
+                            </a>
+                            <img src="../img/icon07.png" alt="">
+                        </li>
+                        <li>
+                            中国鲜花礼品网：中国鲜花网领先品牌
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- logol -->
+        <div class="bg_top">
+            <div class="topDiv">
+                <div class="logol">
+                    <img src="../img/logol.png" alt="">
+                </div>
+                <div class="center">
+                    <div class="search">
+                        <input type="text" class="keywords" placeholder="商品关键词">
+                        <button id="search_btn">搜索</button>
+                    </div>
+                </div>
+                <div class="serviceDiv">
+                    <p>
+                        <img src="../img/icon04.png" alt="">
+                        <span>400-889-8188</span>
+                        <img src="../img/icon05.png" alt="">
+                        <span>在线客服</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+<script src="../../js/cookie.js"></script>
+<script src="../../js/jquery-1.10.1.min.js"></script>
+<script>
+    var userid = getCookie("userid");
+    var username = getCookie("username");
+    if(userid &&　username){
+        $("#login_status").html("你好，" + username);
+    }else{
+        $("#login_status").html("你好，请登录");
+    }
+
+</script>
+
+</html>
