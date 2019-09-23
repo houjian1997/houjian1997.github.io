@@ -1,0 +1,1 @@
+{"version":3,"sources":["index.scss"],"names":[],"mappings":"AAAA,IACI,cAAc,CACd,eAAe,CACf,eAAe,CAEnB,6CACI,YAAa","file":"10.a7194a60.chunk.css","sourcesContent":[".gp{\r\n    width:\"7.5rem\";\r\n    height:\"0.6rem\";\r\n    background:#fff;\r\n}\r\n.my-accordion .pad .am-accordion-content-box {\r\n    padding: 10px;\r\n}"]}
